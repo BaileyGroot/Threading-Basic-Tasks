@@ -7,6 +7,7 @@ class program
 {
     public void Printing()
     {
+        // Looping through the method Printing.
         for (int i = 0; i < 5; i++)
         {
             Console.WriteLine("C#-trådning er nemt!");
@@ -15,6 +16,8 @@ class program
 }
 class threprog
 {
+    // Thread
+
     public static void Main()
     {
         program pg = new program();

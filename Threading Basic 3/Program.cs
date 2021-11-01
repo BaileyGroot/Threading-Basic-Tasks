@@ -5,10 +5,12 @@ using System.Text;
 using System.Threading;
 class program
 {
+    // Generator Method
     public void Generator()
     {
+      
         int alarmcount = 0;
-
+        // Checking if alarm count get more than 3 in value.
         while (alarmcount < 3)
         {
             Thread.Sleep(2000);
@@ -32,12 +34,13 @@ class program
 }
 class threprog
 {
+    // Threads
     public static void Main()
     {
         program pg = new program();
         Thread generator = new Thread(pg.Generator);
         generator.Start();
-
+        // Checking if the thread is alive.
         while (generator.IsAlive)
         {
             Thread.Sleep(10000);

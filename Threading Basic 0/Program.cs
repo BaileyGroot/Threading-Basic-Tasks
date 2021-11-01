@@ -7,6 +7,7 @@ class program
 {
     public void WorkThreadFunction()
     {
+        // Looping through the method WorkThreadFunction and getting the thread names.
         for (int i = 0; i < 5; i++)
         {
             Console.WriteLine(Thread.CurrentThread.Name);
@@ -15,6 +16,7 @@ class program
 }
 class threprog
 {
+    // Threads
     public static void Main()
     {
         program pg = new program();

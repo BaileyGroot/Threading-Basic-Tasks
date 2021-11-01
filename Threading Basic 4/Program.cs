@@ -5,13 +5,15 @@ using System.Text;
 using System.Threading;
 class program
 {
-
+    // Char with starting value *
     public char input = '*';
 
+    // Input
     public void Input()
     {
         while (true)
         {
+            // Getting key info
             ConsoleKeyInfo c = Console.ReadKey();
             Console.ReadLine();
             input = c.KeyChar;
@@ -19,6 +21,7 @@ class program
 
     }
 
+    // Output
     public void Output()
     {
         while (true)
@@ -30,6 +33,7 @@ class program
 }
 class threprog
 {
+    // Threads
     public static void Main()
     {
         program pg = new program();
